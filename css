@@ -1,0 +1,34 @@
+#image {
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: Arial;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.preview {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: transform .2s;
+}
+
+.preview:hover,
+.preview:focus {
+    transform: scale(1.05);
+    border-color: black;
+}
